@@ -1,0 +1,217 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/SlexAxton/css-colorguard">colorguard (v1.2.0)</a>
+</h1>
+<h4>Keep a watchful eye on your css colors</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.colorguard">module colorguard</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.colorguard.colorguard">
+            function <span class="apidocSignatureSpan"></span>colorguard
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.colorguard.process">
+            function <span class="apidocSignatureSpan">colorguard.</span>process
+            <span class="apidocSignatureSpan">(css, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.colorguard.colorguard">module colorguard.colorguard</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.colorguard.colorguard.colorguard">
+            function <span class="apidocSignatureSpan">colorguard.</span>colorguard
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.colorguard.colorguard.process">
+            function <span class="apidocSignatureSpan">colorguard.colorguard.</span>process
+            <span class="apidocSignatureSpan">(css, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.colorguard" id="apidoc.module.colorguard">module colorguard</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.colorguard.colorguard" id="apidoc.element.colorguard.colorguard">
+        function <span class="apidocSignatureSpan"></span>colorguard
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.colorguard.process" id="apidoc.element.colorguard.process">
+        function <span class="apidocSignatureSpan">colorguard.</span>process
+        <span class="apidocSignatureSpan">(css, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (css, opts) {
+  opts = opts || {};
+  var processor = postcss([ colorguard(opts), reporter({formatter: formatter}) ]);
+  return processor.process(css, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`rgba(0,0,0,0.5)`. This is usually fine unless someone is alphatransparency-happy and uses it for
+darkening and lightening colors too often. It could probably be its own check in the future that
+there aren't too many different alpha transparencies of the same color. This is not currently a
+thing though.
+
+## API
+
+### `colorguard.<span class="apidocCodeKeywordSpan">process</span>(css, [options]).then(function(result) {})`
+
+#### options
+
+##### ignore
+
+Type: `array`
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.colorguard.colorguard" id="apidoc.module.colorguard.colorguard">module colorguard.colorguard</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.colorguard.colorguard.colorguard" id="apidoc.element.colorguard.colorguard.colorguard">
+        function <span class="apidocSignatureSpan">colorguard.</span>colorguard
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.colorguard.colorguard.process" id="apidoc.element.colorguard.colorguard.process">
+        function <span class="apidocSignatureSpan">colorguard.colorguard.</span>process
+        <span class="apidocSignatureSpan">(css, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (css, opts) {
+  opts = opts || {};
+  var processor = postcss([ colorguard(opts), reporter({formatter: formatter}) ]);
+  return processor.process(css, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`rgba(0,0,0,0.5)`. This is usually fine unless someone is alphatransparency-happy and uses it for
+darkening and lightening colors too often. It could probably be its own check in the future that
+there aren't too many different alpha transparencies of the same color. This is not currently a
+thing though.
+
+## API
+
+### `colorguard.<span class="apidocCodeKeywordSpan">process</span>(css, [options]).then(function(result) {})`
+
+#### options
+
+##### ignore
+
+Type: `array`
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
